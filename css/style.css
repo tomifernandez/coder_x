@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Recepts";
+    src: url(../fonts/Space.ttf) format("truetype");
+    
+}
+
+@font-face {
+    font-family: "Movex";
+    src: url(../fonts/Movex.otf);
+}
+
+@font-face {
+    font-family: "Nasa";
+    src: url(../fonts/nasalization-rg.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #333232;
+    background-size: cover;
+    color: white;
+    font-family: 'Nasa';
+    letter-spacing: 0.03em;
+}
+
+
+
+.logo {
+    width: 300px;
+    height: 55px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+}
+
+.barra {
+    background-color: #555555;
+    text-align: center;
+    padding: 20px;
+    font-family: Recepts;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 auto;
+    background-image: url(../images/fondogalaxia.jpg);
+}
+
+
+
+.barra a {
+    padding: 10px;
+    
+}
+
+.barra a:visited {
+    color: #0b3e91;
+}
+
+.barra a:hover {
+    color: #0b3e91;
+    background-color: white;
+}
+
+
+
+.misiones {
+    width: 300px;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.planeta2 {
+   padding: 10px;
+}
+
+.planeta2 img{
+    position: relative;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    display: block;
+    width: 25%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.planeta2 h2 {
+    text-align: center;
+    color: #0f4cad;
+}
+
+
+footer{
+    color: white;
+    background-image: url(../images/fondogalaxia.jpg);
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+footer:visited {
+    color: white;
+}
+
+.espacio {
+    position: fixed;
+}
+
+.noticia-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.noticia {
+    margin: 20px 8px 20px 8px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 550px;
+    height: 550px;
+    
+}
+
+.noticia article img {
+    max-width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;   
+   
+}
+
+.noticia p {
+    background-color: rgba(225, 224, 226, 0.945);
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+     
+}
+
+.noticia iframe {
+    width: 550px;
+    height: 450px;
+}
+
+
+.astronauta img {
+    width: 200px;
+    height: 80px;
+   
+}
+
+
+.redes img{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    -webkit-text-fill-color:#1a4fac;
+       
+}
+
+.contenido span {
+    border: #ffff solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+
+.nosotros {
+
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 20px;
+    border: 3px solid black;
+    height: 450px;
+    width: 98%;
+    position: relative;
+    padding: 10px;
+    
+}
+
+.nosotros img {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.nosotros p {
+    position: absolute;
+    display: inline-block;
+}
+
+
+#enviar {
+    display: inline-block;
+    border-radius: 2px;
+    background-color:  #18f159d0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+}
+
+#enviar:hover {
+    background-image: url(../images/gorjeo.png);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#limpiar {
+    display: inline-block;
+    border-radius: 2px;
+    background-color:  #c01531d3;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+}
+
