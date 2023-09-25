@@ -6,7 +6,7 @@
 @font-face {
     font-family: "Recepts";
     src: url(../fonts/Space.ttf) format("truetype");
-    
+
 }
 
 @font-face {
@@ -57,7 +57,7 @@ body {
 
 .barra a {
     padding: 10px;
-    
+
 }
 
 .barra a:visited {
@@ -81,10 +81,10 @@ a {
 }
 
 .planeta2 {
-   padding: 10px;
+    padding: 10px;
 }
 
-.planeta2 img{
+.planeta2 img {
     position: relative;
     top: 20px;
     left: 30px;
@@ -101,7 +101,7 @@ a {
 }
 
 
-footer{
+footer {
     color: white;
     background-image: url(../images/fondogalaxia.jpg);
     bottom: 0;
@@ -132,15 +132,15 @@ footer:visited {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 550px;
     height: 550px;
-    
+
 }
 
 .noticia article img {
     max-width: 100%;
     height: 450px;
     margin: 0 auto;
-    text-align: center;   
-   
+    text-align: center;
+
 }
 
 .noticia p {
@@ -148,7 +148,7 @@ footer:visited {
     margin-top: 10px;
     text-align: center;
     color: black;
-     
+
 }
 
 .noticia iframe {
@@ -160,11 +160,11 @@ footer:visited {
 .astronauta img {
     width: 200px;
     height: 80px;
-   
+
 }
 
 
-.redes img{
+.redes img {
     margin-top: 20px;
     width: 40px;
     height: 40px;
@@ -193,8 +193,8 @@ footer:visited {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 80px;
-    -webkit-text-fill-color:#1a4fac;
-       
+    -webkit-text-fill-color: #1a4fac;
+
 }
 
 .contenido span {
@@ -214,7 +214,7 @@ footer:visited {
     position: absolute;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+
 }
 
 .nosotros img {
@@ -223,12 +223,12 @@ footer:visited {
     width: 300px;
     height: 200px;
     margin-right: 6px;
-    
+
 }
 
 .nosotros p {
     position: relative;
-    
+
 }
 
 #izquierda {
@@ -237,14 +237,14 @@ footer:visited {
     margin-right: 0px;
     width: 270px;
     height: 260px;
-    
+
 }
 
 
 #enviar {
     display: inline-block;
     border-radius: 2px;
-    background-color:  #18f159d0;
+    background-color: #18f159d0;
     color: #ffffff;
     font-weight: bold;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -253,15 +253,15 @@ footer:visited {
 }
 
 #enviar:hover {
-        background-image: url(../images/fondo-cohete.jpg);
-        background-size: cover;
-        cursor: pointer;
+    background-image: url(../images/fondo-cohete.jpg);
+    background-size: cover;
+    cursor: pointer;
 }
 
 #limpiar {
     display: inline-block;
     border-radius: 2px;
-    background-color:  #c01531d3;
+    background-color: #c01531d3;
     color: #ffffff;
     font-weight: bold;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -278,9 +278,9 @@ footer:visited {
 
 .mapa {
     width: 600px;
-    height: 450px ;
-    border:0; 
-    width: 400px; 
+    height: 450px;
+    border: 0;
+    width: 400px;
     height: 200px;
 }
 
@@ -296,14 +296,85 @@ footer:visited {
     align-items: center;
 }
 
+@media screen and (min-width: 249px) {
 
+    .logo {
+        display: none;
+    }
+
+    a {
+        font-size: 9px;
+        text-align: left;
+    }
+
+    .barra {
+        text-align: left;
+    }
+
+    .nosotros p {
+        letter-spacing: 0px;
+    }
+
+    .planeta2 p {
+        font-size: 10px;
+    }
+
+    .planeta2 img {
+        position: relative;
+        top: 20px;
+        left: 2px;
+        text-align: center;
+        display: block;
+        width: 45%;
+        height: 40%;
+        margin: 0 auto;
+    }
+
+    .nosotros {
+        background-color: #555555;
+        margin: 20px;
+        border: 2px solid black;
+        height: 490px;
+        width: 98%;
+        letter-spacing: 0px;
+        position: absolute;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        font-size: 6.9px;
+
+    }
+
+    .nosotros img {
+        position: relative;
+        float: left;
+        width: 100px;
+        height: 60px;
+        margin-right: 6px;
+
+    }
+
+    .nosotros p {
+        position: relative;
+
+    }
+
+    #izquierda {
+        position: relative;
+        float: right;
+        margin-right: 0px;
+        width: 100px;
+        height: 60px;
+
+    }
+
+}
 
 
 @media screen and (min-width: 450px) {
 
     a {
         font-size: 10.5px;
-        
+
     }
 
     .logo {
@@ -312,9 +383,9 @@ footer:visited {
     }
 
     .noticia-flex {
-        display: inline;  
+        display: inline;
     }
-    
+
     .noticia {
         margin: 20px 18px 20px 8px;
         background-color: black;
@@ -322,23 +393,23 @@ footer:visited {
         width: 450px;
         height: 350px;
     }
-    
+
     .noticia article img {
         max-width: 100%;
         height: 320px;
         margin: 0 auto;
-        text-align: center;   
-       display: inline-flex;
+        text-align: center;
+        display: inline-flex;
     }
-    
+
     .noticia p {
         background-color: rgba(225, 224, 226, 0.945);
         margin-top: 10px;
         text-align: center;
         color: black;
-         
+
     }
-    
+
     .noticia iframe {
         width: 450px;
         height: 330px;
@@ -347,28 +418,28 @@ footer:visited {
 
     .planeta2 {
         padding: 10px;
-     }
-     
-     .planeta2 img{
-         position: relative;
-         top: 20px;
-         left: 2px;
-         text-align: center;
-         display: block;
-         width: 45%;
-         height: 40%;
-         margin: 0 auto;
-     }
-     
-     .planeta2 h2 {
-         text-align: center;
-         color: #0f4cad;
-     }
+    }
 
-     .planeta2 p{
+    .planeta2 img {
+        position: relative;
+        top: 20px;
+        left: 2px;
+        text-align: center;
+        display: block;
+        width: 45%;
+        height: 40%;
+        margin: 0 auto;
+    }
+
+    .planeta2 h2 {
+        text-align: center;
+        color: #0f4cad;
+    }
+
+    .planeta2 p {
         font-size: 11px;
-    } 
-    
+    }
+
     .nosotros {
         background-color: #555555;
         margin: 20px;
@@ -379,40 +450,40 @@ footer:visited {
         padding: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         font-size: 8px;
-        
+
     }
-    
+
     .nosotros img {
         position: relative;
         float: left;
         width: 200px;
         height: 140px;
         margin-right: 6px;
-        
+
     }
-    
+
     .nosotros p {
         position: relative;
-        
+
     }
-    
+
     #izquierda {
         position: relative;
         float: right;
         margin-right: 0px;
         width: 180px;
         height: 160px;
-        
+
     }
-    
+
 }
 
 @media screen and (min-width: 768px) {
 
-    
+
     a {
         font-size: 16px;
-        
+
     }
 
     .logo {
@@ -422,9 +493,9 @@ footer:visited {
 
     .noticia-flex {
         display: flex;
-        flex-direction: row;  
+        flex-direction: row;
     }
-    
+
     .noticia {
         margin: 20px 18px 135px 8px;
         background-color: black;
@@ -432,31 +503,31 @@ footer:visited {
         width: 300px;
         height: 350px;
     }
-    
+
     .noticia article img {
         max-width: 100%;
         height: 320px;
         margin: 0 auto;
-        text-align: center;   
+        text-align: center;
     }
-    
+
     .noticia p {
         background-color: rgba(225, 224, 226, 0.945);
         margin-top: 10px;
         text-align: center;
         color: black;
-         
+
     }
-    
+
     .noticia iframe {
         width: 270px;
         height: 300px;
     }
 
     .nosotros {
-        
+
         font-size: 9.5px;
-        
+
     }
 
 
@@ -468,32 +539,32 @@ footer:visited {
         display: flex;
         flex-direction: row;
     }
-    
+
     .noticia {
         margin: 20px 8px 20px 8px;
         background-color: black;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         width: 550px;
         height: 550px;
-        
+
     }
-    
+
     .noticia article img {
         max-width: 100%;
         height: 450px;
         margin: 0 auto;
-        text-align: center;   
-       
+        text-align: center;
+
     }
-    
+
     .noticia p {
         background-color: rgba(225, 224, 226, 0.945);
         margin-top: 10px;
         text-align: center;
         color: black;
-         
+
     }
-    
+
     .noticia iframe {
         width: 550px;
         height: 450px;
@@ -509,25 +580,25 @@ footer:visited {
 
     .planeta2 {
         padding: 10px;
-     }
-     
-     .planeta2 img{
-         position: relative;
-         top: 20px;
-         left: 30px;
-         text-align: center;
-         display: block;
-         width: 28%;
-         height: 25%;
-         margin: 0 auto;
-     }
-     
-     .planeta2 h2 {
-         text-align: center;
-         color: #0f4cad;
-     }
+    }
 
-     .nosotros {
+    .planeta2 img {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        text-align: center;
+        display: block;
+        width: 28%;
+        height: 25%;
+        margin: 0 auto;
+    }
+
+    .planeta2 h2 {
+        text-align: center;
+        color: #0f4cad;
+    }
+
+    .nosotros {
         background-color: #555555;
         margin: 20px;
         border: 2px solid black;
@@ -535,30 +606,30 @@ footer:visited {
         width: 98%;
         position: absolute;
         padding: 10px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;            
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         font-size: 14.5px;
     }
-    
+
     .nosotros img {
         position: relative;
         float: left;
         width: 300px;
         height: 200px;
         margin-right: 6px;
-        
+
     }
-    
+
     .nosotros p {
         position: relative;
-        
+
     }
-    
+
     #izquierda {
         position: relative;
         float: right;
         margin-right: 0px;
         width: 270px;
         height: 260px;
-        
+
     }
 }
