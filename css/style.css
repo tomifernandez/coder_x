@@ -206,26 +206,38 @@ footer:visited {
 
 
 .nosotros {
-
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: #555555;
     margin: 20px;
-    border: 3px solid black;
-    height: 450px;
+    border: 2px solid black;
+    height: 530px;
     width: 98%;
-    position: relative;
+    position: absolute;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
 }
 
 .nosotros img {
     position: relative;
-    display: inline-block;
-    margin-right: 5px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 6px;
+    
 }
 
 .nosotros p {
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    
+}
+
+#izquierda {
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    width: 270px;
+    height: 260px;
+    
 }
 
 
@@ -241,10 +253,9 @@ footer:visited {
 }
 
 #enviar:hover {
-    background-image: url(../images/gorjeo.png);
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+        background-image: url(../images/fondo-cohete.jpg);
+        background-size: cover;
+        cursor: pointer;
 }
 
 #limpiar {
@@ -256,5 +267,298 @@ footer:visited {
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 14px 22px;
     border: 0;
+    cursor: pointer;
 }
 
+#limpiar:hover {
+    background-image: url(../images/limpia.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mapa {
+    width: 600px;
+    height: 450px ;
+    border:0; 
+    width: 400px; 
+    height: 200px;
+}
+
+.formulario {
+    background-color: #052250ec;
+    color: white;
+    padding: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 45px 8px 20px 25px;
+    border-radius: 12px;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (min-width: 450px) {
+
+    a {
+        font-size: 10.5px;
+        
+    }
+
+    .logo {
+        width: 0px;
+        height: 0px;
+    }
+
+    .noticia-flex {
+        display: inline;  
+    }
+    
+    .noticia {
+        margin: 20px 18px 20px 8px;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        width: 450px;
+        height: 350px;
+    }
+    
+    .noticia article img {
+        max-width: 100%;
+        height: 320px;
+        margin: 0 auto;
+        text-align: center;   
+       display: inline-flex;
+    }
+    
+    .noticia p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+         
+    }
+    
+    .noticia iframe {
+        width: 450px;
+        height: 330px;
+        display: inline-flex;
+    }
+
+    .planeta2 {
+        padding: 10px;
+     }
+     
+     .planeta2 img{
+         position: relative;
+         top: 20px;
+         left: 2px;
+         text-align: center;
+         display: block;
+         width: 45%;
+         height: 40%;
+         margin: 0 auto;
+     }
+     
+     .planeta2 h2 {
+         text-align: center;
+         color: #0f4cad;
+     }
+
+     .planeta2 p{
+        font-size: 11px;
+    } 
+    
+    .nosotros {
+        background-color: #555555;
+        margin: 20px;
+        border: 2px solid black;
+        height: 500px;
+        width: 98%;
+        position: absolute;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        font-size: 8px;
+        
+    }
+    
+    .nosotros img {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 140px;
+        margin-right: 6px;
+        
+    }
+    
+    .nosotros p {
+        position: relative;
+        
+    }
+    
+    #izquierda {
+        position: relative;
+        float: right;
+        margin-right: 0px;
+        width: 180px;
+        height: 160px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    
+    a {
+        font-size: 16px;
+        
+    }
+
+    .logo {
+        width: 0px;
+        height: 0px;
+    }
+
+    .noticia-flex {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    .noticia {
+        margin: 20px 18px 135px 8px;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        width: 300px;
+        height: 350px;
+    }
+    
+    .noticia article img {
+        max-width: 100%;
+        height: 320px;
+        margin: 0 auto;
+        text-align: center;   
+    }
+    
+    .noticia p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+         
+    }
+    
+    .noticia iframe {
+        width: 270px;
+        height: 300px;
+    }
+
+    .nosotros {
+        
+        font-size: 9.5px;
+        
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .noticia-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .noticia {
+        margin: 20px 8px 20px 8px;
+        background-color: black;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        width: 550px;
+        height: 550px;
+        
+    }
+    
+    .noticia article img {
+        max-width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        text-align: center;   
+       
+    }
+    
+    .noticia p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+         
+    }
+    
+    .noticia iframe {
+        width: 550px;
+        height: 450px;
+    }
+
+    .logo {
+        width: 300px;
+        height: 55px;
+        position: absolute;
+        text-align: left;
+        top: 0;
+    }
+
+    .planeta2 {
+        padding: 10px;
+     }
+     
+     .planeta2 img{
+         position: relative;
+         top: 20px;
+         left: 30px;
+         text-align: center;
+         display: block;
+         width: 28%;
+         height: 25%;
+         margin: 0 auto;
+     }
+     
+     .planeta2 h2 {
+         text-align: center;
+         color: #0f4cad;
+     }
+
+     .nosotros {
+        background-color: #555555;
+        margin: 20px;
+        border: 2px solid black;
+        height: 530px;
+        width: 98%;
+        position: absolute;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;            
+        font-size: 14.5px;
+    }
+    
+    .nosotros img {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 200px;
+        margin-right: 6px;
+        
+    }
+    
+    .nosotros p {
+        position: relative;
+        
+    }
+    
+    #izquierda {
+        position: relative;
+        float: right;
+        margin-right: 0px;
+        width: 270px;
+        height: 260px;
+        
+    }
+}
