@@ -445,20 +445,20 @@ footer:visited {
         background-color: #555555;
         margin: 20px;
         border: 2px solid black;
-        height: 500px;
-        width: 98%;
+        height: 420px;
+        width: 95%;
         position: absolute;
         padding: 10px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        font-size: 8px;
-
+        font-size: 9px;
     }
 
     .nosotros img {
+        display: none;
         position: relative;
         float: left;
-        width: 200px;
-        height: 140px;
+        width: 120px;
+        height: 80px;
         margin-right: 6px;
 
     }
@@ -466,16 +466,12 @@ footer:visited {
     
     .nosotros p {
         position: relative;
-
+        letter-spacing: 0.1px;
+        border-color: black;
     }
 
     #izquierda {
-        position: relative;
-        float: right;
-        margin-right: 0px;
-        width: 180px;
-        height: 160px;
-
+        display: none;
     }
 
 }
@@ -530,6 +526,19 @@ footer:visited {
 
         font-size: 9.5px;
 
+    }
+
+    .nosotros img {
+        display: inline;
+        position: relative;
+        float: left;
+        width: 120px;
+        height: 80px;
+        margin-right: 6px;
+    }
+
+    #izquierda {
+        display: inline;
     }
 
 
@@ -600,9 +609,6 @@ footer:visited {
         color: #0f4cad;
     }
 
-    .planeta2 p {
-        font-size: 16px;
-    }
 
     .nosotros {
         background-color: #555555;
