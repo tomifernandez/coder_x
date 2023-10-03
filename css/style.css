@@ -19,9 +19,6 @@
     src: url(../fonts/nasalization-rg.otf);
 }
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -30,6 +27,7 @@ body {
     color: white;
     font-family: 'Nasa';
     letter-spacing: 0.03em;
+    
 }
 
 
@@ -44,10 +42,10 @@ body {
 
 .barra {
     background-color: #555555;
-    text-align: center;
     padding: 20px;
     font-family: Recepts;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     margin: 0 auto;
     background-image: url(../images/fondogalaxia.jpg);
@@ -100,23 +98,6 @@ a {
     color: #0f4cad;
 }
 
-
-footer {
-    color: white;
-    background-image: url(../images/fondogalaxia.jpg);
-    bottom: 0;
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-
-}
-
-
-footer:visited {
-    color: white;
-}
-
 .espacio {
     position: fixed;
 }
@@ -161,13 +142,6 @@ footer:visited {
     width: 200px;
     height: 80px;
 
-}
-
-
-.redes img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
 }
 
 .video-container {
@@ -276,25 +250,94 @@ footer:visited {
     cursor: pointer;
 }
 
-.mapa {
-    width: 600px;
-    height: 450px;
-    border: 0;
-    width: 400px;
-    height: 200px;
-}
-
 .formulario {
     background-color: #052250ec;
     color: white;
     padding: 16px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin: 45px 8px 20px 25px;
+    margin: 45px 8px 417px 25px;
     border-radius: 12px;
     width: 95%;
     justify-content: center;
     align-items: center;
 }
+
+footer {
+    color: white;
+    background-image: url(../images/fondogalaxia.jpg);
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+footer:visited {
+    color: white;
+}
+
+.footer-arreglar {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.footer-arreglar iframe {
+    width: 300px;
+    height: 180px;
+}
+
+.barra-separadora {
+    border-left: 1px solid white;
+    height: 150px;
+    margin: 0 20px;
+}
+
+.footer-arreglar-redes {
+    display: inline;
+    padding: 1px;
+}
+
+.footer-arreglar-redes ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.footer-arreglar-redes ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.footer-arreglar-redes ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.footer-arreglar-redes ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.footer-arreglar-redes ul {
+    list-style: none;
+}
+
+.footer-arreglar-redes ul li {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    transition: all 0.5s ease;
+}
+
+.footer-arreglar-redes ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
 
 @media screen and (min-width: 249px) {
 
@@ -308,7 +351,7 @@ footer:visited {
     }
 
     .barra {
-        text-align: left;
+        text-align: center;
     }
 
     .nosotros p {
@@ -462,7 +505,7 @@ footer:visited {
 
     }
 
-    
+
     .nosotros p {
         position: relative;
 
