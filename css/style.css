@@ -100,10 +100,6 @@ a {
     color: #0f4cad;
 }
 
-.espacio {
-    position: fixed;
-}
-
 .noticia-flex {
     display: flex;
     flex-direction: row;
@@ -257,7 +253,7 @@ a {
     color: white;
     padding: 16px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin: 45px 8px 415px 25px;
+    margin: 45px 8px 20px 25px;
     border-radius: 12px;
     width: 95%;
     justify-content: center;
@@ -265,11 +261,13 @@ a {
 }
 
 footer {
-    color: white;
-    background-image: url(../images/fondogalaxia.jpg);
     text-align: center;
     padding: 20px 0;
-    
+    color: white;
+    background-image: url(../images/fondogalaxia.jpg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer:visited {
@@ -277,8 +275,14 @@ footer:visited {
 }
 
 .footer-arreglar {
-    display: inline-block;
-    margin: 0 20px;
+    display: inline-block; 
+    margin: 0 20px;  
+}
+
+.footer-arreglar-redes img {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
 }
 
 .footer-arreglar iframe {
@@ -290,56 +294,8 @@ footer:visited {
     border-left: 1px solid white;
     height: 150px;
     margin: 0 20px;
-}
 
-.footer-arreglar-redes {
-    display: inline;
-    padding: 1px;
 }
-
-.footer-arreglar-redes ul li:hover.twitter {
-    border: 5px solid #00aced;
-    box-shadow: 0 0 15px #00aced;
-    transition: all 0.5s ease;
-}
-
-.footer-arreglar-redes ul li:hover .fa-twitter {
-    color: #00aced;
-    text-shadow: 0 0 15px #00aced;
-    transition: all 0.5s ease;
-}
-
-.footer-arreglar-redes ul li:hover.facebook {
-    border: 5px solid #3b5998;
-    box-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-}
-
-.footer-arreglar-redes ul li:hover .fa-facebook {
-    color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
-}
-
-.footer-arreglar-redes ul {
-    list-style: none;
-}
-
-.footer-arreglar-redes ul li {
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 5px solid #D8E2DC;
-    transition: all 0.5s ease;
-}
-
-.footer-arreglar-redes ul li .fa {
-    color: #D8E2DC;
-    margin-top: 20px;
-    transition: all 0.5s ease;
-}
-
 
 @media screen and (min-width: 249px) {
 
@@ -507,7 +463,7 @@ footer:visited {
 
     }
 
-
+    
     .nosotros p {
         position: relative;
 
@@ -642,6 +598,10 @@ footer:visited {
     .planeta2 h2 {
         text-align: center;
         color: #0f4cad;
+    }
+
+    .planeta2 p {
+        font-size: 16px;
     }
 
     .nosotros {

@@ -11,12 +11,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.ico">
     <link rel="manifest" href="../images/site.webmanifest">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        
+        <div>
+            <a href="#">
+                <img src="../images/logo.png" alt="Logo CoderX" class="logo">
+            </a>
+        </div>
         <div class="">
             <div class="barra">
                 <a href="../index.html" target="">Inicio</a>
@@ -29,20 +32,21 @@
     </header>
 
     <main>
-        <form action="" class="formulario">   
-                <label for="nombre">Ingrese su nombre</label>
-                <input type="text" id="nombre" name="nombre">
-                <br><br>
-                <label for="apellido">Ingrese su apellido</label>
-                <input type="text" id="apellido" name="apellido">
-                <br><br>
-                <label for="email">Ingrese su email</label>
-                <input type="email" name="email" placeholder="email@dominio.com">
-                <br><br>
-                <label for="texto">Escribinos lo que quieras</label>
-                <br>
-                <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-                <br>
+
+        <form action="" class="formulario">
+            <label for="nombre">Ingrese su nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+            <label for="apellido">Ingrese su apellido</label>
+            <input type="text" id="apellido" name="apellido">
+            <br><br>
+            <label for="email">Ingrese su email</label>
+            <input type="email" name="email" placeholder="email@dominio.com">
+            <br><br>
+            <label for="texto">Escribinos lo que quieras</label>
+            <br>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            <br>
             <button type="submit" id="enviar">Enviar</button>
             <input type="reset" name="Limpiar" value="Limpiar" id="limpiar">
         </form>
@@ -52,10 +56,10 @@
     <footer>
         <div class="footer-arreglar">
             <div class="footer-arreglar-redes">
-                <ul>
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                </ul>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.png"
+                        alt="Logo instagram"></a>
+
+                <a href="https://www.twitter.com" target="_blank"><img src="../images/gorjeo.png" alt="Logo Twitter"></a>
             </div>
         </div>
 
@@ -75,4 +79,5 @@
     </footer>
 
 </body>
+
 </html>
