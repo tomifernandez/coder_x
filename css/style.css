@@ -19,6 +19,9 @@
     src: url(../fonts/nasalization-rg.otf);
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -27,7 +30,6 @@ body {
     color: white;
     font-family: 'Nasa';
     letter-spacing: 0.03em;
-    
 }
 
 
