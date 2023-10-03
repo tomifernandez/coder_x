@@ -628,7 +628,6 @@ footer:visited {
 
     }
 
-<<<<<<< HEAD
     .nosotros img {
         display: inline;
         position: relative;
@@ -640,7 +639,7 @@ footer:visited {
 
     #izquierda {
         display: inline;
-=======
+    }
     .footer-arreglar {
         display: inline-block; 
         margin: 0 5px;  
@@ -673,7 +672,6 @@ footer:visited {
 
     #derechos {
         font-size: 15px;
->>>>>>> desa
     }
 
 
@@ -781,8 +779,8 @@ footer:visited {
     }
 
     .footer-arreglar li:hover {
-        transform: scale(10.10) ;
-        -webkit-transform: scale(1.1) ;
-        -moz-transform: scale(1.1) ;
+        transform: scale(10.10);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
     }
 }
