@@ -1,0 +1,46 @@
+footer {
+    text-align: center;
+    color: white;
+    background-image: url(../images/fondogalaxia.jpg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+    &:visited {
+      color: white;
+    }
+  }
+  
+  .footer-arreglar {
+    display: inline-block;
+    margin: 0 20px;
+    align-items: top;
+    text-align: top;
+  }
+  
+  .footer-arreglar-redes img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-arreglar {
+    iframe {
+      width: 220px;
+      height: 140px;
+      margin-top: 10px;
+    }
+  
+    ul {
+      text-decoration: none;
+      list-style: none;
+    }
+  
+    a {
+      color: white;
+  
+      &:hover {
+        color: #0f4cad;
+      }
+    }
+  }

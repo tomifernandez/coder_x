@@ -1,24 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: "Recepts";
-    src: url(../fonts/Space.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Movex";
-    src: url(../fonts/Movex.otf);
-  }
-  
-  @font-face {
-    font-family: "Nasa";
-    src: url(../fonts/nasalization-rg.otf);
-  }
-  
+  @import "./base/_reset";
+  @import "./base/_fuentes";
+  @import "./utils/_variables";
+  @import "./components/_buttons";
+  @import "./layout/_footer";
+
   body {
     margin: 0;
     background: #333232;
@@ -50,15 +35,48 @@
       padding: 10px;
   
       &:visited {
-        color: #0b3e91;
+        color: $colorHover;
       }
   
       &:hover {
-        color: #0b3e91;
+        color: $colorHover;
         background-color: white;
       }
     }
   }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    span {
+      border: #ffff solid 2px;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    -webkit-text-fill-color: #1a4fac;
+  }
+  
   
   .misiones {
     width: 300px;
@@ -72,8 +90,9 @@
   .planeta2 {
     padding: 10px;
   
-    img {
-      position: relative;
+
+  img {
+    position: relative;
       top: 20px;
       left: 30px;
       text-align: center;
@@ -81,12 +100,12 @@
       width: 25%;
       height: 40%;
       margin: 0 auto;
-    }
-  
-    h2 {
-      text-align: center;
-      color: #0f4cad;
-    }
+  }
+
+h2 {
+    text-align: center;
+    color: #0f4cad;
+  }
   }
   
   .noticia-flex {
@@ -133,44 +152,32 @@
       height: 450px;
     }
   }
+
+  .planeta2 {
+    padding: 10px;
+
+  img {
+    position: relative;
+      top: 20px;
+      left: 30px;
+      text-align: center;
+      display: block;
+      width: 25%;
+      height: 40%;
+      margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: #0f4cad;
+  }
+  }
   
   .astronauta img {
     width: 200px;
     height: 80px;
   }
-  
-  .video-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  #background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .contenido {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 80px;
-    -webkit-text-fill-color: #1a4fac;
-  
-    span {
-      border: #ffff solid 2px;
-      border-radius: 20px;
-      padding: 20px;
-    }
-  }
-  
+    
   .nosotros {
     background-color: #555555;
     margin: 20px;
@@ -202,40 +209,7 @@
     height: 260px;
   }
   
-  #enviar {
-    display: inline-block;
-    border-radius: 2px;
-    background-color: #18f159d0;
-    color: #ffffff;
-    font-weight: bold;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    padding: 14px 22px;
-    border: 0;
   
-    &:hover {
-      background-image: url(../images/fondo-cohete.jpg);
-      background-size: cover;
-      cursor: pointer;
-    }
-  }
-  
-  #limpiar {
-    display: inline-block;
-    border-radius: 2px;
-    background-color: #c01531d3;
-    color: #ffffff;
-    font-weight: bold;
-    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    padding: 14px 22px;
-    border: 0;
-    cursor: pointer;
-  
-    &:hover {
-      background-image: url(../images/limpia.jpg);
-      background-size: cover;
-      cursor: pointer;
-    }
-  }
   
   .formulario {
     background-color: #052250ec;
@@ -248,54 +222,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  footer {
-    text-align: center;
-    color: white;
-    background-image: url(../images/fondogalaxia.jpg);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  
-    &:visited {
-      color: white;
-    }
-  }
-  
-  .footer-arreglar {
-    display: inline-block;
-    margin: 0 20px;
-    align-items: top;
-    text-align: top;
-  }
-  
-  .footer-arreglar-redes img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .footer-arreglar {
-    iframe {
-      width: 220px;
-      height: 140px;
-      margin-top: 10px;
-    }
-  
-    ul {
-      text-decoration: none;
-      list-style: none;
-    }
-  
-    a {
-      color: white;
-  
-      &:hover {
-        color: #0f4cad;
-      }
-    }
-  }
-  
+    
   .barra-separadora {
     border-left: 1px solid white;
     height: 140px;

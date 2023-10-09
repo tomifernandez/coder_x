@@ -16,6 +16,80 @@
   font-family: "Nasa";
   src: url(../fonts/nasalization-rg.otf);
 }
+#enviar {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: rgba(24, 241, 89, 0.8156862745);
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 22px;
+  border: 0;
+}
+#enviar:hover {
+  background-image: url(../images/fondo-cohete.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#limpiar {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: rgba(192, 21, 49, 0.8274509804);
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 22px;
+  border: 0;
+  cursor: pointer;
+}
+#limpiar:hover {
+  background-image: url(../images/limpia.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-image: url(../images/fondogalaxia.jpg);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer:visited {
+  color: white;
+}
+
+.footer-arreglar {
+  display: inline-block;
+  margin: 0 20px;
+  align-items: top;
+  text-align: top;
+}
+
+.footer-arreglar-redes img {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-arreglar iframe {
+  width: 220px;
+  height: 140px;
+  margin-top: 10px;
+}
+.footer-arreglar ul {
+  text-decoration: none;
+  list-style: none;
+}
+.footer-arreglar a {
+  color: white;
+}
+.footer-arreglar a:hover {
+  color: #0f4cad;
+}
+
 body {
   margin: 0;
   background: #333232;
@@ -52,6 +126,37 @@ body {
 .barra a:hover {
   color: #0b3e91;
   background-color: white;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-container span {
+  border: white solid 2px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 80px;
+  -webkit-text-fill-color: #1a4fac;
 }
 
 .misiones {
@@ -120,40 +225,27 @@ a {
   height: 450px;
 }
 
+.planeta2 {
+  padding: 10px;
+}
+.planeta2 img {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  text-align: center;
+  display: block;
+  width: 25%;
+  height: 40%;
+  margin: 0 auto;
+}
+.planeta2 h2 {
+  text-align: center;
+  color: #0f4cad;
+}
+
 .astronauta img {
   width: 200px;
   height: 80px;
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.contenido {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 80px;
-  -webkit-text-fill-color: #1a4fac;
-}
-.contenido span {
-  border: white solid 2px;
-  border-radius: 20px;
-  padding: 20px;
 }
 
 .nosotros {
@@ -185,39 +277,6 @@ a {
   height: 260px;
 }
 
-#enviar {
-  display: inline-block;
-  border-radius: 2px;
-  background-color: rgba(24, 241, 89, 0.8156862745);
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  padding: 14px 22px;
-  border: 0;
-}
-#enviar:hover {
-  background-image: url(../images/fondo-cohete.jpg);
-  background-size: cover;
-  cursor: pointer;
-}
-
-#limpiar {
-  display: inline-block;
-  border-radius: 2px;
-  background-color: rgba(192, 21, 49, 0.8274509804);
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  padding: 14px 22px;
-  border: 0;
-  cursor: pointer;
-}
-#limpiar:hover {
-  background-image: url(../images/limpia.jpg);
-  background-size: cover;
-  cursor: pointer;
-}
-
 .formulario {
   background-color: rgba(5, 34, 80, 0.9254901961);
   color: white;
@@ -228,47 +287,6 @@ a {
   width: 95%;
   justify-content: center;
   align-items: center;
-}
-
-footer {
-  text-align: center;
-  color: white;
-  background-image: url(../images/fondogalaxia.jpg);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-footer:visited {
-  color: white;
-}
-
-.footer-arreglar {
-  display: inline-block;
-  margin: 0 20px;
-  align-items: top;
-  text-align: top;
-}
-
-.footer-arreglar-redes img {
-  margin-top: 20px;
-  width: 40px;
-  height: 40px;
-}
-
-.footer-arreglar iframe {
-  width: 220px;
-  height: 140px;
-  margin-top: 10px;
-}
-.footer-arreglar ul {
-  text-decoration: none;
-  list-style: none;
-}
-.footer-arreglar a {
-  color: white;
-}
-.footer-arreglar a:hover {
-  color: #0f4cad;
 }
 
 .barra-separadora {
