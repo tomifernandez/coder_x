@@ -299,181 +299,128 @@ a {
   margin-left: -50px;
 }
 
-@media screen and (width: 414px) and (height: 896px) and (-webkit-device-pixel-ratio: 2) {
-  .logo {
-    display: none;
-  }
-  a {
-    font-size: 9px;
-    text-align: left;
-  }
+@media screen and (min-width: 320px) {
   .barra {
     text-align: center;
   }
-  .nosotros p {
-    letter-spacing: 0px;
-  }
-  .planeta2 p {
-    font-size: 10px;
-  }
-  .planeta2 img {
-    position: relative;
-    top: 20px;
-    left: 2px;
-    text-align: center;
-    display: block;
-    width: 45%;
-    height: 40%;
-    margin: 0 auto;
-  }
-  .nosotros {
-    background-color: #555555;
-    margin: 20px;
-    border: 2px solid black;
-    height: 490px;
-    width: 98%;
-    letter-spacing: 0px;
-    position: absolute;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 6.9px;
-  }
-  .nosotros img {
-    position: relative;
-    float: left;
-    width: 100px;
-    height: 60px;
-    margin-right: 6px;
-  }
-  .nosotros p {
-    position: relative;
-  }
-  #izquierda {
-    position: relative;
-    float: right;
-    margin-right: 0px;
-    width: 100px;
-    height: 60px;
-  }
-  .footer-arreglar {
-    display: inline-block;
-    margin: 0 5px;
-    align-items: top;
-    text-align: top;
-  }
-  .footer-arreglar-redes img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  .footer-arreglar iframe {
-    width: 185px;
-    height: 100px;
-    margin-top: 10px;
-  }
-  .footer-arreglar a {
-    font-size: 12px;
-  }
-  .barra-separadora {
-    border-left: 1px solid white;
-    height: 80px;
-    margin: 0px;
-  }
-  #derechos {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 249px) {
-  .logo {
-    display: none;
-  }
-  a {
-    font-size: 9px;
-    text-align: left;
-  }
-  .barra {
-    text-align: center;
-  }
-  .nosotros p {
-    letter-spacing: 0px;
-  }
-  .planeta2 p {
-    font-size: 10px;
-  }
-  .planeta2 img {
-    position: relative;
-    top: 20px;
-    left: 2px;
-    text-align: center;
-    display: block;
-    width: 45%;
-    height: 40%;
-    margin: 0 auto;
-  }
-  .nosotros {
-    background-color: #555555;
-    margin: 20px;
-    border: 2px solid black;
-    height: 490px;
-    width: 98%;
-    letter-spacing: 0px;
-    position: absolute;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 6.9px;
-  }
-  .nosotros img {
-    position: relative;
-    float: left;
-    width: 100px;
-    height: 60px;
-    margin-right: 6px;
-  }
-  .nosotros p {
-    position: relative;
-  }
-  #izquierda {
-    position: relative;
-    float: right;
-    margin-right: 0px;
-    width: 100px;
-    height: 60px;
-  }
-  .footer-arreglar {
-    display: inline-block;
-    margin: 0 5px;
-    align-items: top;
-    text-align: top;
-  }
-  .footer-arreglar-redes img {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  .footer-arreglar iframe {
-    width: 185px;
-    height: 100px;
-    margin-top: 10px;
-  }
-  .footer-arreglar a {
-    font-size: 12px;
-  }
-  .barra-separadora {
-    border-left: 1px solid white;
-    height: 80px;
-    margin: 0px;
-  }
-  #derechos {
-    font-size: 10px;
-  }
-}
-@media (min-width: 450px) {
   a {
     font-size: 10.5px;
   }
   .logo {
-    width: 0px;
-    height: 0px;
+    display: none;
+  }
+  .noticia-flex {
+    display: inline;
+  }
+  .noticia {
+    margin: 20px 18px 150px 8px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 300px;
+    height: 350px;
+  }
+  .noticia article img {
+    max-width: 100%;
+    height: 320px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-flex;
+  }
+  .noticia p {
+    background-color: rgba(225, 224, 226, 0.945);
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+  }
+  .noticia iframe {
+    width: 300px;
+    height: 330px;
+    display: inline-flex;
+  }
+  .planeta2 {
+    padding: 10px;
+  }
+  .planeta2 img {
+    position: relative;
+    top: 20px;
+    left: 2px;
+    text-align: center;
+    display: block;
+    width: 45%;
+    height: 40%;
+    margin: 0 auto;
+  }
+  .planeta2 h2 {
+    text-align: center;
+    color: #0f4cad;
+  }
+  .planeta2 p {
+    font-size: 9px;
+  }
+  .nosotros {
+    background-color: #555555;
+    margin: 20px;
+    border: 2px solid black;
+    height: 420px;
+    width: 95%;
+    position: absolute;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 9px;
+  }
+  .nosotros img {
+    display: none;
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin-right: 6px;
+  }
+  .nosotros p {
+    position: relative;
+    letter-spacing: 0.1px;
+    border-color: black;
+  }
+  #izquierda {
+    display: none;
+  }
+  .footer-arreglar {
+    display: inline-block;
+    margin: 0 5px;
+    align-items: top;
+    text-align: top;
+  }
+  .footer-arreglar-redes img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .footer-arreglar iframe {
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  .footer-arreglar a {
+    font-size: 14px;
+  }
+  .barra-separadora {
+    border-left: 1px solid white;
+    height: 50px;
+    margin: 0px;
+  }
+  #derechos {
+    font-size: 14px;
+  }
+}
+@media (min-width: 425px) {
+  .barra {
+    text-align: center;
+  }
+  a {
+    font-size: 10.5px;
+  }
+  .logo {
+    display: none;
   }
   .noticia-flex {
     display: inline;
