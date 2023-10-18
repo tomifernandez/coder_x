@@ -27,7 +27,6 @@
     font-family: Recepts;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     margin: 0 auto;
     background-image: url(../images/fondogalaxia.jpg);
 
@@ -43,6 +42,15 @@
         background-color: white;
       }
     }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      list-style: none;
+    }
+
   }
 
   .video-container {
@@ -51,10 +59,11 @@
     height: 100vh;
     overflow: hidden;
 
-    span {
+    h1 {
       border: #ffff solid 2px;
       border-radius: 20px;
       padding: 20px;
+      font-size: 65px;
     }
   }
 
@@ -102,7 +111,7 @@
       margin: 0 auto;
     }
 
-    h2 {
+    h1 {
       text-align: center;
       color: #0f4cad;
     }
@@ -218,10 +227,17 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     margin: 45px 8px 20px 25px;
     border-radius: 12px;
-    width: 95%;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
+
+  .form {
+    width: 80%;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+  }
+
 
   .barra-separadora {
     border-left: 1px solid white;
@@ -259,7 +275,7 @@
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       width: 300px;
       height: 350px;
-      
+
 
       article img {
         max-width: 100%;

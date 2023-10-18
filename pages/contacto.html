@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.ico">
     <link rel="manifest" href="../images/site.webmanifest">
+    <meta name="description" content="Un sitio web diseñado por Tomas Fernandez donde imita una empresa espacial llamada CoderX, con sus misiones y la descripción de la misma.">
+    <meta name="keywords" content="Página sobre el espacio y proyecto CoderX">
 </head>
 
 <body>
@@ -20,36 +22,38 @@
                 <img src="../images/logo.png" alt="Logo CoderX" class="logo">
             </a>
         </div>
-        <div class="">
-            <div class="barra">
-                <a href="../index.html" target="">Inicio</a>
-                <a href="../pages/misiones.html">Misiones</a>
-                <a href="../pages/planetas.html">Planetas</a>
-                <a href="../pages/nosotros.html">Sobre nosotros</a>
-                <a href="../pages/contacto.html">Contacto</a>
-            </div>
+        <div class="barra">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" target="">Inicio</a></li>
+                    <li><a href="./misiones.html">Misiones</a></li>
+                    <li><a href="./planetas.html">Planetas</a></li>
+                    <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
         </div>
     </header>
 
     <main>
 
-        <form action="" class="formulario">
+        <div class="form">
+        <form action="" class="formulario">  
+            <div class="form">     
             <label for="nombre">Ingrese su nombre</label>
             <input type="text" id="nombre" name="nombre">
-            <br><br>
             <label for="apellido">Ingrese su apellido</label>
             <input type="text" id="apellido" name="apellido">
-            <br><br>
             <label for="email">Ingrese su email</label>
-            <input type="email" name="email" placeholder="email@dominio.com">
-            <br><br>
+            <input type="email" name="email" placeholder="email@dominio.com">        
             <label for="texto">Escribinos lo que quieras</label>
-            <br>
             <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-            <br>
             <button type="submit" id="enviar">Enviar</button>
             <input type="reset" name="Limpiar" value="Limpiar" id="limpiar">
+        </div>  
         </form>
+    </div>
 
     </main>
 
@@ -59,7 +63,8 @@
                 <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.png"
                         alt="Logo instagram"></a>
 
-                <a href="https://www.twitter.com" target="_blank"><img src="../images/gorjeo.png" alt="Logo Twitter"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png"
+                        alt="Logo Twitter"></a>
             </div>
         </div>
 
@@ -79,10 +84,18 @@
 
         <div class="footer-arreglar">
             <ul>
-                <a href="../index.html"><li>Inicio</li></a>
-                <a href="./nosotros.html"><li>Sobre Nosotros</li></a>
-                <a href="./misiones.html"><li>Misiones</li></a>
-                <a href="./planetas.html"><li>Planetas</li></a>
+                <a href="../index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="./nosotros.html">
+                    <li>Sobre Nosotros</li>
+                </a>
+                <a href="./misiones.html">
+                    <li>Misiones</li>
+                </a>
+                <a href="./planetas.html">
+                    <li>Planetas</li>
+                </a>
             </ul>
         </div>
 
