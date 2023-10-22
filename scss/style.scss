@@ -3,6 +3,7 @@
   @import "./utils/_variables";
   @import "./components/_buttons";
   @import "./layout/_footer";
+  
 
   body {
     margin: 0;
@@ -29,6 +30,7 @@
     align-items: center;
     margin: 0 auto;
     background-image: url(../images/fondogalaxia.jpg);
+    width: 100%;
 
     a {
       padding: 10px;
@@ -214,7 +216,7 @@
     position: relative;
     float: right;
     margin-right: 0px;
-    width: 270px;
+    width: 240px;
     height: 260px;
   }
 
@@ -223,19 +225,24 @@
   .formulario {
     background-color: #052250ec;
     color: white;
-    padding: 16px;
+    padding: 2px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin: 45px 8px 20px 25px;
     border-radius: 12px;
-    width: 100%;
+    width: 450px;
+    height: 380px;
+    margin-top: 100px;
+
+    input {
+      width: 64%;
+    }
   }
 
   .form {
-    width: 80%;
-    align-items: left;
+    align-items: center;
+    justify-content: left;
     display: flex;
     flex-direction: column;
-    border: 0px;
+    margin-top: 20px;
   }
 
 
@@ -254,11 +261,12 @@
 
     .barra {
       text-align: center;
+      width: 100%;
     }
 
 
     a {
-      font-size: 10.5px;
+      font-size: 9px;
     }
 
     .logo {
@@ -396,6 +404,7 @@
 
     .barra {
       text-align: center;
+      width: 100%;
     }
 
     a {
@@ -411,11 +420,12 @@
     }
 
     .noticia {
-      margin: 20px 18px 20px 8px;
+      margin: 20px 18px 150px 8px;
       background-color: black;
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-      width: 450px;
+      width: 300px;
       height: 350px;
+
 
       article img {
         max-width: 100%;
@@ -433,7 +443,7 @@
       }
 
       iframe {
-        width: 450px;
+        width: 300px;
         height: 330px;
         display: inline-flex;
       }
@@ -528,6 +538,8 @@
     #derechos {
       font-size: 14px;
     }
+
+    
   }
 
   @media screen and (min-width: 768px) {
@@ -544,7 +556,7 @@
       display: flex;
       flex-direction: row;
     }
-
+    
     .noticia {
       margin: 20px 18px 135px 8px;
       background-color: black;
@@ -574,6 +586,7 @@
 
     .nosotros {
       font-size: 9.5px;
+      margin-top: 100px;
 
       img {
         display: inline;
@@ -587,6 +600,8 @@
 
     #izquierda {
       display: inline;
+      width: 90px;
+      height: 100px;
     }
 
     .footer-arreglar {
@@ -623,9 +638,173 @@
     #derechos {
       font-size: 15px;
     }
+  
+    .noticia-flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .noticia {
+      margin: 20px 8px 20px 8px;
+      background-color: black;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      width: 550px;
+      height: 550px;
+
+      article img {
+        max-width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+      }
+
+      iframe {
+        width: 200px;
+        height: 450px;
+      }
+    }
+    
   }
 
   @media screen and (min-width: 1024px) {
+    .noticia-flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .noticia {
+      margin: 20px 8px 20px 8px;
+      background-color: black;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      width: 550px;
+      height: 550px;
+
+      article img {
+        max-width: 100%;
+        height: 450px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+      }
+
+      iframe {
+        width: 550px;
+        height: 450px;
+      }
+    }
+
+    .logo {
+      width: 300px;
+      height: 55px;
+      position: absolute;
+      text-align: left;
+      top: 0;
+    }
+
+    .planeta2 {
+      padding: 10px;
+
+      img {
+        position: relative;
+        top: 20px;
+        left: 30px;
+        text-align: center;
+        display: block;
+        width: 28%;
+        height: 25%;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        color: #0f4cad;
+      }
+    }
+
+    .nosotros {
+      background-color: #555555;
+      margin: 20px;
+      border: 2px solid black;
+      height: 530px;
+      width: 98%;
+      position: absolute;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      font-size: 11.5px;
+
+      img {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 200px;
+        margin-right: 6px;
+      }
+
+      p {
+        position: relative;
+      }
+    }
+
+    #izquierda {
+      position: relative;
+      float: right;
+      margin-right: 0px;
+      width: 240px;
+      height: 120px;
+    }
+
+    .footer-arreglar li:hover {
+      transform: scale(10.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+    }
+
+    .noticia {
+      margin: 20px 18px 150px 8px;
+      background-color: black;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      width: 300px;
+      height: 350px;
+
+
+      article img {
+        max-width: 100%;
+        height: 320px;
+        margin: 0 auto;
+        text-align: center;
+        display: inline-flex;
+      }
+
+      p {
+        background-color: rgba(225, 224, 226, 0.945);
+        margin-top: 10px;
+        text-align: center;
+        color: black;
+      }
+
+      iframe {
+        width: 300px;
+        height: 330px;
+        display: inline-flex;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+
     .noticia-flex {
       display: flex;
       flex-direction: row;
@@ -715,7 +894,7 @@
       float: right;
       margin-right: 0px;
       width: 270px;
-      height: 260px;
+      height: 200px;
     }
 
     .footer-arreglar li:hover {
@@ -723,4 +902,5 @@
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
     }
+
   }

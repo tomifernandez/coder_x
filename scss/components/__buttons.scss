@@ -7,9 +7,10 @@
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 14px 22px;
     border: 0;
+    width: 100px;
   
     &:hover {
-      background-image: url(../images/fondo-cohete.jpg);
+      background-image: url(../../images/cohete-enviar.jpg);
       background-size: cover;
       cursor: pointer;
     }
@@ -25,6 +26,7 @@
     padding: 14px 22px;
     border: 0;
     cursor: pointer;
+    width: 100px;
   
     &:hover {
       background-image: url(../images/limpia.jpg);
