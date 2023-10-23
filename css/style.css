@@ -16,6 +16,10 @@
   font-family: "Nasa";
   src: url(../fonts/nasalization-rg.otf);
 }
+@font-face {
+  font-family: "Nasa21";
+  src: url(/fonts/Nasa21.ttf);
+}
 #enviar {
   display: inline-block;
   border-radius: 2px;
@@ -382,12 +386,13 @@ a {
     background-color: #555555;
     margin: 20px;
     border: 2px solid black;
-    height: 420px;
-    width: 95%;
+    height: 2080px;
+    width: 92%;
     position: absolute;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 9px;
+    font-size: 15px;
+    font-family: "Nasa21";
   }
   .nosotros img {
     display: none;
@@ -401,6 +406,7 @@ a {
     position: relative;
     letter-spacing: 0.1px;
     border-color: black;
+    font-weight: 200;
   }
   #izquierda {
     display: none;
@@ -432,6 +438,26 @@ a {
   #derechos {
     font-size: 14px;
   }
+  .formulario {
+    background-color: rgba(5, 34, 80, 0.9254901961);
+    color: white;
+    padding: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 12px;
+    width: 280px;
+    height: 360px;
+    margin-top: 60px;
+  }
+  .formulario input {
+    width: 64%;
+  }
+  .form {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 @media (min-width: 425px) {
   .barra {
@@ -439,7 +465,7 @@ a {
     width: 100%;
   }
   a {
-    font-size: 10.5px;
+    font-size: 10px;
   }
   .logo {
     display: none;
@@ -496,12 +522,12 @@ a {
     background-color: #555555;
     margin: 20px;
     border: 2px solid black;
-    height: 420px;
-    width: 95%;
+    height: 1250px;
+    width: 93%;
     position: absolute;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 9px;
+    font-size: 13px;
   }
   .nosotros img {
     display: none;
@@ -559,51 +585,10 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .noticia {
-    margin: 20px 18px 135px 8px;
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    width: 300px;
-    height: 350px;
-  }
-  .noticia article img {
-    max-width: 100%;
-    height: 320px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .noticia p {
-    background-color: rgba(225, 224, 226, 0.945);
-    margin-top: 10px;
-    text-align: center;
-    color: black;
-  }
-  .noticia iframe {
-    width: 270px;
-    height: 300px;
-  }
-  .nosotros {
-    font-size: 9.5px;
-    margin-top: 100px;
-  }
-  .nosotros img {
-    display: inline;
-    position: relative;
-    float: left;
-    width: 120px;
-    height: 80px;
-    margin-right: 6px;
-  }
   #izquierda {
     display: inline;
     width: 90px;
     height: 100px;
-  }
-  .footer-arreglar {
-    display: inline-block;
-    margin: 0 5px;
-    align-items: top;
-    text-align: top;
   }
   .footer-arreglar-redes img {
     margin-top: 20px;
@@ -652,6 +637,30 @@ a {
   .noticia iframe {
     width: 200px;
     height: 450px;
+  }
+  .nosotros {
+    background-color: #555555;
+    margin: 20px;
+    border: 2px solid black;
+    height: 595px;
+    width: 95%;
+    position: absolute;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 13px;
+  }
+  .nosotros img {
+    display: inline;
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 80px;
+    margin-right: 6px;
+  }
+  .nosotros p {
+    position: relative;
+    letter-spacing: 0.1px;
+    border-color: black;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -710,7 +719,7 @@ a {
     background-color: #555555;
     margin: 20px;
     border: 2px solid black;
-    height: 530px;
+    height: 480px;
     width: 98%;
     position: absolute;
     padding: 10px;
@@ -731,8 +740,8 @@ a {
     position: relative;
     float: right;
     margin-right: 0px;
-    width: 240px;
-    height: 120px;
+    width: 250px;
+    height: 165px;
   }
   .footer-arreglar li:hover {
     transform: scale(10.1);
